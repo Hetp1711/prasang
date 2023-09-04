@@ -1,2 +1,2 @@
-# prasang
+# Prasang
 Event Management System
