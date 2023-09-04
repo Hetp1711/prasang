@@ -1,3 +1,3 @@
 # Prasang
-Event Management System
+An Event Management System
 Developed By Swapnil Patel; Het Patel; Darsh patel; Vraj Patel
