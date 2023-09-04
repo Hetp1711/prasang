@@ -1,0 +1,187 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {            text-align: center;
+        }
+        .style4
+        {
+            border: 1px solid #008000;
+            padding: 1px 4px;
+            font-family: Lato;
+            color: #165601;
+            font-size: xx-large;
+            text-align: left;
+            }
+        .style5
+        {
+            border: 1px solid #008000;
+            padding: 1px 4px;
+        }
+        .style6
+        {
+            font-size: medium;
+        }
+        .style8
+        {
+            border: 2px solid #FFFFFF;
+        }
+        .style9
+        {
+            height: 148px;
+            border: 2px solid #FFFFFF;
+        }
+        .style134
+        {
+            color: #165601;
+        }
+        .style135
+        {
+            font-size: medium;
+            color: #165601;
+            font-family: Lato;
+            font-weight: normal;
+            text-align: left;
+            border: 1px solid #008000;
+            padding: 1px 4px;
+        }
+        .navbar {
+  overflow: hidden;
+  background-color: #333;
+  
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+    </style>
+</head>
+<body class="body-login">
+    <form id="form1" runat="server">
+    <div style="height:auto ; width:auto">
+     <div style="height:auto; width:1000px;  margin-left:150px">
+  
+      &nbsp;<table   style="width:1000px; height:150px; background-color:White">
+    
+      <tr>
+              <td class="style9" colspan="2" >
+             
+                  <asp:Image ID="Image2" runat="server" ImageUrl="~/image/uhome.png" 
+                      Width="988px" Height="150px" />
+             
+                  &nbsp;<br class="style8" />   
+           </td>
+           
+                
+          </tr>
+               </table>
+               <table   style="border-style: solid; border-width: 1px; padding: 1px 4px; width:1000px; height:70px; background-color:White; margin-top:2px">
+           <tr>
+        
+              <td style="text-align: center" class="style5" rowspan="2" >
+        
+                 
+                  <asp:ImageButton ID="ImageButton1" runat="server" BorderColor="Black" 
+                      BorderStyle="Solid" BorderWidth="1px" Height="30px" 
+                      ImageUrl="~/image/home.png" Width="120px" 
+                      PostBackUrl="~/AdminHome.aspx" CausesValidation="False" />
+                  <asp:ImageButton ID="ImageButton2" runat="server" BorderColor="Black" 
+                      BorderStyle="Solid" BorderWidth="1px" Height="30px" 
+                      ImageUrl="~/image/logout.png" Width="120px" 
+                      style="text-align: right" PostBackUrl="~/home.aspx" 
+                      CausesValidation="False" />
+             
+                 
+           </td>
+           
+                
+              <td class=style4>
+             
+                  <span class="style6">Welcome&nbsp; :<asp:Label 
+                      ID="Label1" runat="server"></asp:Label>
+&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               </td>
+           
+  
+          </tr>
+           
+   
+           <tr>
+        
+                
+              <td class=style135>
+             
+                  &nbsp;</td>
+           
+  
+          </tr>
+           
+   
+      </table>
+           <div class="navbar">
+  <a href="AdminUserRemove.aspx">RemoveUser</a>
+  
+             <a href="AdminRemoveMember.aspx">RemoveMember</a>
+               <a href="AdminRemoveEvent.aspx">RemoveUploadEvent</a>
+             <a href="AdminViewAllE.aspx">ViewAllEnquiry</a>
+          
+             <a href="AdminViewAll.aspx">ViewFeedBack</a>
+            
+</div>
+      </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    
+   <div style="height: 69px; width:1000px; margin-left:150px; background-color:White">
+  
+      <table   style="width: 100%; height:25px;">
+        
+             <tr>
+              <td class=style1>
+             
+                 <br class="style12" />   
+             
+                                  Copyright © 2022 Prashang Event </td>
+ </td>
+                  
+                  </td>
+           
+                
+          </tr>
+          
+      </table>
+  </div>
+    
+    </div>
+    </form>
+</body>
+</html>

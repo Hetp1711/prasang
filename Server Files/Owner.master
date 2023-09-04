@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Owner.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+	  <link href="~/css/w3.css" rel="stylesheet" type="text/css" />
+<!-- //font-awesome-icons -->
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {            text-align: center;
+        }
+
+        .style2
+        {           color:black;
+        }
+        .style4
+        {
+            border: 1px solid #008000;
+            padding: 1px 4px;
+            font-family: Lato;
+            color: #165601;
+            font-size: xx-large;
+            text-align: left;
+            }
+        .style5
+        {
+            border: 1px solid #008000;
+            padding: 1px 4px;
+        }
+        .style6
+        {
+            font-size: medium;
+        }
+        .style8
+        {
+            border: 2px solid #FFFFFF;
+        }
+        .style9
+        {
+            height: 148px;
+            border: 2px solid #FFFFFF;
+        }
+        .style134
+        {
+            color: #165601;
+        }
+        .style135
+        {
+            font-size: medium;
+            color: #165601;
+            font-family: Lato;
+            font-weight: normal;
+            text-align: left;
+            border: 1px solid #008000;
+            padding: 1px 4px;
+        }
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+    </style>
+</head>
+<body class="body-login">
+    <form id="form1" runat="server">
+    <div style="height:auto ; width:auto">
+
+     <div style="height:auto; width:1000px;  margin-left:150px">
+   
+      &nbsp;<table   style="width:1000px; height:150px; background-color:White">
+    
+      <tr>
+              <td class="style9" colspan="2" >
+             
+                  <asp:Image ID="Image2" runat="server" ImageUrl="~/image/uhome.png" 
+                      Width="988px" Height="150px" />
+             
+                  &nbsp;<br class="style8" />   
+           </td>
+           
+                
+          </tr>
+               </table>
+         <div class="navbar">
+  <a href="MemberHome.aspx">Home</a>
+  
+             <a href="OwnerEditProfile.aspx">EditProfile</a>
+               <a href="UploadEvent.aspx">UploadEvent</a>
+             <a href="OwnerViewEnquiryStatus.aspx">ViewEnquiry</a>
+          
+             <a href="ViewFeedBack.aspx">ViewFeedBack</a>
+             <a >
+                 <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click" /></a>
+</div>
+              
+
+      </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    
+   <div style="height: 69px; width:1000px; margin-left:150px; background-color:White">
+  
+      <table   style="width: 100%; height:25px;">
+        
+             <tr>
+              <td class=style1>
+             
+                   Copyright © 2022 </td>
+                  
+                  </td>
+           
+                
+          </tr>
+          
+      </table>
+  </div>
+    
+    </div>
+    </form>
+</body>
+</html>
