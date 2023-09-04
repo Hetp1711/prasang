@@ -1,0 +1,223 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+body{
+    padding-top:70px; margin:0;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+
+#content
+{
+    min-height: 600px; 
+
+
+}
+    
+
+
+#banner_image {
+
+    text-align: center; position:fixed; right:0; bottom:0; min-width:100%;min-height:100%;background-size:cover;}
+
+
+#banner_content {
+    position: relative;
+    padding-top: 0%;
+    padding-bottom: 0%;
+   
+    margin-bottom: 17%;
+   
+}
+
+
+#item_list {
+    padding-top: 50px;
+}
+
+/*This code ensures that when we navigate to a particular section of a page, the section does not get lost behind the header*/
+#cameras:before, #watches:before, #shirts:before{
+    display: block; 
+    content: " "; 
+    margin-top: -85px; 
+    height: 85px; 
+    visibility: hidden;
+}
+
+
+
+#login-panel .panel-footer{
+    font-weight:normal;
+}
+
+footer {
+    padding: 7px 0;
+    background-color: white;
+    color:black;
+	text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.red{
+    color:red;
+}
+
+#settings-container{
+    margin-bottom:10px;
+}
+
+.navbar-brand{
+	padding-top:0px;
+    font-size:20px;
+}
+
+@media(max-width:768px) {
+    #banner_content {
+        padding-bottom: 15%;
+    }
+    footer{
+        text-align:left;
+    }
+}
+
+.remove_item_link{
+    color:#0000ff;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  padding-top:50px;
+  
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index:-100;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+   background: rgb(243, 255, 239)); /* Fallback color */
+  background: rgba(243, 255, 239,0.3);
+  color: #f3ffef;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.event{
+overflow:auto;
+padding-top:50px;
+padding-bottom:50px;
+}
+
+
+#event_content {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+ border-radius:20px;   background-color: rgba(0, 0, 0, 0.4); max-width:660px; 
+}
+
+
+@media screen and (max-width:600px) {
+.column {
+    width: 100%;
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding-top:70px;
+  padding-bottom:50px;
+  background: rgb(243, 255, 239)); /* Fallback color */
+  background: rgba(243, 255, 239,0.5);
+  color: #f3ffef;
+}
+
+ .content {
+  position: relative;
+  bottom: 0;
+  background: rgb(243, 255, 239)); /* Fallback color */
+  background: rgba(243, 255, 239,0.5);
+  color: #f3ffef;
+  width: 100%;
+  padding: 20px;
+  border-radius:25px;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.responsive1 {
+  max-width: auto;
+  height: 100%;
+}
+
+.text-style p{
+	font-size:30px;
+	font-family:Book Antiqua;
+	color:#2b2424;
+}
+
+.text-style a{
+	font-size:20px;
+	font-family:Book Antiqua;
+	color:light blue;
+}
+
+.text-style a:hover{
+	font-size:20px;
+	font-family:Book Antiqua;
+	color:red;
+}

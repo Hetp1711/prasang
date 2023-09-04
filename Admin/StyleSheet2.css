@@ -1,0 +1,14 @@
+﻿body 
+{
+	background-image: url(BGG.jpg);
+	background-repeat: repeat;
+}
+#index-02 {
+	position:relative;
+
+	left:0px;
+	top:0px;
+	width:1450px;
+	height:338px;
+	background-image:url(under.gif);
+}
