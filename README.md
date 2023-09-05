@@ -1,4 +1,5 @@
-# PRASANG Event Planning Full-stack Web Application
+# PRASANG 
+# An Event Planning Full-stack Web Application
 Presented By 
 # BTechCSE_2022(Final Year Grad Students)
 Darsh Patel:(180303105206)
