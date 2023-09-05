@@ -1,5 +1,4 @@
 # PRASANG An Event Planning Full-stack Web Application
-#
 
 Jointly Develop By BTechCSE(Final Year Grad Students)_2022
 
